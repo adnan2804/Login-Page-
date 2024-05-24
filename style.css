@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+
+/* Use for background image aligning and all*/
+.container{     
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,8)), url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Use for boxes in which details has to filled*/
+.form-box{
+    width: 90%;
+    max-width: 450px;          
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;   
+    text-align: center;
+    padding: 50px 60px 70px;
+}
+
+
+/* Use for the heading one*/
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: black;
+    position: relative;
+}
+
+/* Use for underline under heading */
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #4048e7;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.input-field{
+    background: #f5f4f4;
+    margin: 15px 0;
+    border-radius: 65px;    /*use for cornering box*/
+    display: flex;
+    align-items: center;    /*text alignment*/
+    max-height: 65px;       
+    transition: max-height 0.5s;
+    overflow: hidden;       /* to hide */
+}
+
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: black;
+
+}
+
+form p{
+    text-align: left;
+    font-size: medium;
+}
+
+form a{
+    text-decoration: none;
+    color: brown;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+      
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 90px;
+    border: 0;
+    outline: 0;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 250px;
+}
+
+button.disable{
+    background: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+}
+
+
+
